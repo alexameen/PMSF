@@ -378,7 +378,7 @@ if (!$noLoadingScreen) {
             <div id="currentWeather"></div>
             <?php
         } ?>
-        
+
         <?php
         if ($noNativeLogin === false || $noDiscordLogin === false) {
             if (!empty($_SESSION['user']->id)) {
@@ -1656,7 +1656,7 @@ if (!$noLoadingScreen) {
     <?php } ?>
     <?php if (! $noRenamePokestops) { ?>
         <div class="renamepokestop-modal" style="display: none;">
-            <input type="text" id="pokestop-name" name="pokestop-name" 
+            <input type="text" id="pokestop-name" name="pokestop-name"
                 placeholder="<?php echo i8ln('Enter New Pokéstop Name'); ?>" data-type="pokestop" class="search-input">
             <div class="button-container">
                 <button type="button" onclick="renamePokestopData(event);" class="renamepokestopid"><i class="fas fa-edit"></i> <?php echo i8ln('Rename Pokéstop'); ?></button>
@@ -1665,7 +1665,7 @@ if (!$noLoadingScreen) {
     <?php } ?>
     <?php if (! $noRenameGyms) { ?>
         <div class="renamegym-modal" style="display: none;">
-            <input type="text" id="gym-name" name="gym-name" 
+            <input type="text" id="gym-name" name="gym-name"
                 placeholder="<?php echo i8ln('Enter New Gym Name'); ?>" data-type="gym" class="search-input">
             <div class="button-container">
                 <button type="button" onclick="renameGymData(event);" class="renamegymid"><i class="fas fa-edit"></i> <?php echo i8ln('Rename Gym'); ?></button>
@@ -1757,16 +1757,16 @@ if (!$noLoadingScreen) {
             <?php
                 $json   = file_get_contents('static/dist/data/questtype.min.json');
                 $questtypes  = json_decode($json, true);
-                
+
                 $json    = file_get_contents('static/dist/data/rewardtype.min.json');
                 $rewardtypes   = json_decode($json, true);
-                
+
                 $json    = file_get_contents('static/dist/data/conditiontype.min.json');
                 $conditiontypes   = json_decode($json, true);
-                
+
                 $json    = file_get_contents('static/dist/data/pokemon.min.json');
                 $encounters = json_decode($json, true);
-                
+
                 $json    = file_get_contents('static/dist/data/items.min.json');
                 $items = json_decode($json, true);
             ?>
@@ -2295,7 +2295,8 @@ if (!$noLoadingScreen) {
     var forcedTileServer = <?php echo $forcedTileServer === true ? 'true' : 'false' ?>;
     var noRarityDisplay = <?php echo $noRarityDisplay === true ? 'true' : 'false' ?>;
     var noWeatherIcons = <?php echo $noWeatherIcons === true ? 'true' : 'false' ?>;
-    var noIvShadow = <?php echo $no100IvShadow === true ? 'true' : 'false' ?>;
+    var showIvShadow = <?php echo $noIvShadow === false ? 'true' : 'false' ?>;
+    var ivShadowConfig = <?php echo json_encode( $ivShadowConfig ) ?>;
     var noRaidTimer = <?php echo $noRaidTimer === true ? 'true' : 'false' ?>;
     var enableRaidTimer = <?php echo $noRaidTimer ? 'false' : $enableRaidTimer ?>;
     var noRocketTimer = <?php echo $noTeamRocketTimer === true ? 'true' : 'false' ?>;

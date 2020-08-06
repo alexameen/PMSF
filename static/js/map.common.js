@@ -239,6 +239,16 @@ var StoreOptions = {
             default: enablePokemon,
             type: StoreTypes.Boolean
         },
+    'showIvShadow':
+        {
+            default: showIvShadow,
+            type: StoreTypes.Boolean
+        },
+    'ivShadowConfig':
+        {
+            default: ivShadowConfig,
+            type: StoreTypes.JSON
+        },
     'showBigKarp':
         {
             default: showBigKarp,

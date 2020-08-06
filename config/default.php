@@ -186,7 +186,6 @@ $noHighLevelData = true;                                       // true/false
 $noCatchRates = false;
 $noRarityDisplay = false;                                      // true/false
 $noWeatherIcons = true;
-$no100IvShadow = false;
 
 /* Notification Settings */
 $noNotifyPokemon = false;                                       // true/false
@@ -530,3 +529,14 @@ $enableDebug = false;
 $map = "rdm";
 $fork = "default";                                                  // default/asner/sloppy
 $queryInterval = '5000';                                            // Interval between raw_data requests.
+
+//-----------------------------------------------------
+// IV SHADOW CONFIG
+//-----------------------------------------------------
+$noIvShadow = false;
+$ivShadowConfig = [
+    [ 'minIv' =>   0, 'color' => 'rgba( 0, 0, 255, 0.2 )', 'spread' =>  '7px' ],
+    [ 'minIv' =>  90, 'color' => 'yellow',                 'spread' =>  '8px' ],
+    [ 'minIv' =>  95, 'color' => 'orange',                 'spread' =>  '9px' ],
+    [ 'minIv' => 100, 'color' => 'red',                    'spread' => '10px' ]
+]
