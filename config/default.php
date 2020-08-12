@@ -533,7 +533,7 @@ $queryInterval = '5000';                                            // Interval 
 //-----------------------------------------------------
 // IV SHADOW CONFIG
 //-----------------------------------------------------
-$noIvShadow = false;
+$showIvShadow = true;
 $ivShadowConfig = [
     [ 'minIv' =>   0, 'color' => 'rgba( 0, 0, 255, 0.2 )', 'spread' =>  '7px' ],
     [ 'minIv' =>  90, 'color' => 'yellow',                 'spread' =>  '8px' ],

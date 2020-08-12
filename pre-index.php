@@ -2295,7 +2295,7 @@ if (!$noLoadingScreen) {
     var forcedTileServer = <?php echo $forcedTileServer === true ? 'true' : 'false' ?>;
     var noRarityDisplay = <?php echo $noRarityDisplay === true ? 'true' : 'false' ?>;
     var noWeatherIcons = <?php echo $noWeatherIcons === true ? 'true' : 'false' ?>;
-    var showIvShadow = <?php echo $noIvShadow === false ? 'true' : 'false' ?>;
+    var showIvShadow = <?php echo $showIvShadow === true ? 'true' : 'false' ?>;
     var ivShadowConfig = <?php echo json_encode( $ivShadowConfig ) ?>;
     var noRaidTimer = <?php echo $noRaidTimer === true ? 'true' : 'false' ?>;
     var enableRaidTimer = <?php echo $noRaidTimer ? 'false' : $enableRaidTimer ?>;
